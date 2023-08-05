@@ -1,80 +1,94 @@
-#include <stddef.h>
+#include <stdbool.h>
 #include <stdio.h>
 
-void filterAndMap(const int arr[],size_t n,int(*fillter_f)(int),int (*map_f)(int),int dest[],size_t* dest_cnt)
-{
-    size_t count = 0; 
-    
-    for (size_t i=0; i<n; i++)
-    {
-        if (fillter_f(arr[i]))
-        {
-            int mappedValue = map_f(arr[i]);
-            if (dest!=NULL) {
-                dest[count] = mappedValue;
-            }
-            count++;
-        }
+void filterAndMap(const int arr[], size_t n, int (*fillter_f)(int),
+                  int (*map_f)(int), int dest[]) {
+  int count = 0;
+
+  for (size_t i = 0; i < n; i++) {
+
+    if (fillter_f(arr[i])) {
+      int mappedValue = map_f(arr[i]);
+
+      dest[count] = mappedValue;
+      count++;
     }
-    if (dest_cnt!=NULL) {
-        *dest_cnt = count;
-    }
+  }
 }
 
-int eveneNumber(int a) 
+int eveneNumber(int a) { return a % 2 == 0; }
+
+int squarePrimeNumber(int a) {
+  if (a <= 1) {
+    return false;
+  }
+  for (int i = 2; i * i <= a; i++) {
+    if (a % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+int powNum(int a) { return a * a; }
+
+int returnNumber(int a)
 {
-    if (a % 2 == 0)
-    {
-        return a;
-    } 
+  return a;
 }
 
-int squarePrimeNumber (int a)
-{
-    if (a < 2) {
+int countBits(int num) {
+  int count = 0;
 
-    }
-    for (int i=2; i*i<=a; i++)
-    {
-        if (a%i != 0) {
-        continue;
-        }
-    }
-    return a;
+  if (num < 0) {
+    return 0;
+  }
+
+  while (num) {
+    count += num & 1;
+    num >>= 1;
+  }
+  return count;
 }
 
-//Print array
-void printArray(int arr[], int size)
-{
-
-    for (size_t i=0; i<size; i++)
-    {   
-        printf("%d", arr[i]);
-        if (i<size-1) 
-        {
-            printf(", ");
-        }
+// Print array
+void printArray(int arr[], int size) {
+  for (size_t i = 0; i < size; i++) {
+    if (arr[i] == '\0') {
+      return;
     }
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
 }
 
-int main(int argc, char *argv[]) 
-{
- //Input array   
- int arr[8] = {1,2,3,4,-1,-2,11,-100};
+int main()
+ {
 
- //Output array   
- int dest[10];
+  // Input array
+  int arr[8] = {1, 2, 3, 4, -1, -2, 11, -100};
 
- //size_t
- size_t new_size;
+  // Output array
+  int dest[8];
 
- //Filter and Map   
- filterAndMap(arr, 8, eveneNumber, squarePrimeNumber, dest, &new_size);
+  // Print even number of elements
+  filterAndMap(arr, 8, eveneNumber, returnNumber, dest);
+  printArray(dest, 10);
+  printf("\n");
 
- printf("new_size = %zu\n", new_size);
- printf("dest ={");
+  // Print square prime number
+  filterAndMap(arr, 8, squarePrimeNumber, powNum, dest);
+  printArray(dest, 10);
+  printf("\n");
 
- // Print new array (dest)
- printArray(dest, new_size);
- printf("};\n");
+  // Print bits count
+  filterAndMap(arr, 8, eveneNumber, countBits, dest);
+  printArray(dest, 10);
+  printf("\n");
+  //We have arra 2 4 -2 -100
+  //print bits count for 2 4
+  //result  1 1
+
+  
+
+  return 0;
 }
