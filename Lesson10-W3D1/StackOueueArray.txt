@@ -1,0 +1,81 @@
+1. Реализирайте следните функции:
+
+struct A {
+    int data;
+}
+size_t capacity, cur_elem_count;
+A *arr_begin;
+cur_elem_count - броя на елементите в стека
+capacity - максималния брой на елементи в стека
+void init_stack_array(size_t max_elem_count) {
+    capacity = max_elem_count;
+    cur_elem_count = 0;
+    // Заделя масив с max_elem_count на брой елементи в динамичната
+}
+
+int push(A elem) {
+    // Проверява дали има място в стека
+    if(capacity == cur_elem_count) {
+        return -1;
+    }
+    // Добавя елемент на първата свободна позиция
+    arr_begin[cur_elem_count] = elem;
+    cur_elem_count++;
+    return 0;
+}
+
+int pop(A *res) {
+    // Премахва последния елемент на стека и го предава чрез указателя res
+    // Връща 0 при успех и -1 при неуспех
+}
+
+void print_elems() {
+    // Печата елементите на стека
+}
+
+_ _ _ _
+push(3)
+3 _ _ _
+push(2)
+3 2 _ _
+pop() -> 2
+3 _ _ _
+push(10)
+3 10 _ _
+push(12)
+3 10 12 _
+pop() -> 12
+3 10 _ _
+
+2. Реализирайте функции за работа със структурата от данни Queue:
+
+A *arr_begin;
+size_t capacity, cur_elem_count;
+
+Queue init_queue_array(size_t max_elem_count) {
+    capacity = max_elem_count
+    // Заделя масив с max_elem_count на брой елементи в динамичната памет
+}
+int enqueue(Queue *q, A elem) - Добавя елемент на края на опашката
+При успех връща 0 при неуспех -1.
+int dequeue(Queue *q, A *res) - премахва елемент от началото на опашката. При успех връща 0, при неуспех -1.
+void print_elems(Queue q); - печата елементите на опашката.
+
+Queue q1 = init_queue(5);
+q1: _ _ _ _ _
+capacity = 5
+cur_elem_count = 0
+
+enqueue(10)
+q1: 10 _ _ _ _
+enqueue(20)
+q1: 10 20 _ _ _
+dequeu()
+q1: 20 _ _ _ _
+enqueue(30)
+enqueue(40)
+q1: 20 30 40 _ _
+dequeu()
+q1: 30 40 _ _ _
+dequeue()
+q1: 40 _ _ _ _
