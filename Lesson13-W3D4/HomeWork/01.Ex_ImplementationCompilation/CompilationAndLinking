@@ -1,0 +1,18 @@
+
+Hint: Example for two file manual compilation and linking:
+Step
+File 1
+File 2
+Preprocessing
+gcc -E file1.c -o file1.i
+gcc -E file2.c -o file2.i
+Compilation
+gcc -S file1.i -o file1.s
+gcc -S file2.i -o file2.s
+Assemble
+gcc -c file1.s -o file1.o
+gcc -c file2.s -o file2.o
+Linking
+gcc file1.o file2.o -o program
+
+
