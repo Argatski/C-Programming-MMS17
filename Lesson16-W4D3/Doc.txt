@@ -1,0 +1,8 @@
+нишки 
+
+//Dedlock ili taka kazva kak shte dvete nishki neznaqt pri po golei stoinosti koq koga e prikluchila i nemoje da se se izkara pravilniq rezulta pri 1000000 pri 2 nishki rezultata trqbva da e 2000000 no ne se poluchava taka
+// za da ne se poluchi razminavane resultatite ot dvete nishki se izpolzvat method na semafora ili muteksite
+
+///Mutex - stopira ednata nishka dokato ne si svurshi rabotata i sinhronizira rabota mejdu nishkite
+
+//Seafori
