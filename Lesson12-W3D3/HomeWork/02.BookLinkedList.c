@@ -54,7 +54,6 @@ int cmpBookList(const void* a, const void* b)
 }
 
 
-
 void printBooks() {
     for(size_t i = 0; i < COUNT; i++) {
         printf("Book %zu\n", i+1);

@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+
+
 void print_hex_dump(FILE *file) {
     unsigned char buffer[16];
     size_t offset = 0;
