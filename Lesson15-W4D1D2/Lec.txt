@@ -1,0 +1,33 @@
+Procesi i nishki v C
+
+Procesi - operaciona sistea moje da izpulnqva razlichni programi instalirani ili suzdadeni ot potrebitel. Izpolzva RAM pameta neobhodima i e elektro energiq sled izluchvane na kompt ram pamate gubi informaciqta.Procesa e programa v rejim na izpulnenie.
+Programite sa pasivni procesi na hardiska pri kompilaciq te stavata aktuvni
+Ima algoritni razpredelqne na resursite:
+--RoundRobinScheduling
+--Planirane na nai-kratko sledvashto zadanie
+--Prioritetno planirae
+
+Pobreme na izpulnenie procesite imat nqkolko sustoqnie
+nov,startirashta,chakashta,gotova,gotova,prekusnat(terminated)
+
+Operaciona sistema (process control block)
+-sustoqnie na procesi
+-nomer na Procesa
+-programen broqch
+-za izkarvane na asemblerski kod vmesto -lm izpolzvame s pri runinaga
+-sudurjanie na vsichki procesorni registri
+-akount information
+-Vhodni izhodna informaciq
+
+za vsichki procesi v teerminala "top" comandata pokazva vsichki procesi koito sa zaredenie.
+ili komandata htop koqto ponqkoga trqbva da se do instalira ako e neobhodimo
+
+mkfifo suzdavane na fail stek first in first out
+
+linuks komanda za ogranichavane pravata na potrebietel za fail
+
+chmod 666
+chmod 777 -vsichko e razresheno
+chod
+
+//Zakumunikacq mejdu dva procesa shte uzdadem 2 faila
