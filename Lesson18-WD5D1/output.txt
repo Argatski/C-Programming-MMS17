@@ -1,3 +1,0 @@
-NEW FD: 1
-Hello World!
-Hello world2!
