@@ -1,0 +1,34 @@
+open vs fopen?
+read vs fread?
+write vs fwrite?
+close vs fclose?
+
+printf("%x %d", 15, 20);
+
+int a = 17;
+write();
+
+fopen("hello.txt", "r");
+open("hello.txt", O_WRONLY | O_TRUNCATE);
+
+stdout vs STDOUT_FILENO?
+                1 
+....
+
+Process?
+fork?
+exec? execve, execl, execv, execlp, execvp
+- same pid
+- open fd
+wait?
+waitpid?
+
+Thread
+int wstatus;
+wait(&wstatus);
+
+WIFEXITED(wstatus);
+WEXITSTATUS(wstatus);
+
+
+pipe vs mkfifo?
