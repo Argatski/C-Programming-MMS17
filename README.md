@@ -26,31 +26,8 @@
 | <a > Lesson18 </a>                         |<a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson18-W5D1"> Link</a> |
 | <a > Lesson19 </a>                         |<a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson19-W5D2"> Link</a> |
 </td>
-<td>
 
-| **HomeWork**                                                                                  | **Link**                                                           |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| <a> HomeWork - Day6 </a>                                    | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> HomeWork - Day7 </a>                                    | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> HomeWork - Day8 and Day9 </a>                           | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> HomeWork - Day10 </a>                                   | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> HomeWork - Day11 </a>                                   | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> HomeWork - Day12 </a>                                   | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> HomeWork - Day13 </a>                                   | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
 
-</td>
-
-<td>
-
-| **Exam**                                                                                  | **Link**                                                           |
-| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| <a> Exam01  </a>                                    | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> Exam02  </a>                                    | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> Exam03  </a>                                    | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> Exam04  </a>                                    | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-| <a> Final Exam </a>                                 | <a href="https://github.com/Argatski/C-Programming-MMS17/tree/main/Lesson05/HomeWork"> Link </a> |
-
-</td>
 
 
 
